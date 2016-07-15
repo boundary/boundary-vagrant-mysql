@@ -21,7 +21,7 @@ Prior to installation you need to obtain in your Boundary API Token.
 2. Start the virtual machine using your Boundary API Token and Redis version:
 
     ```bash
-    $ API_TOKEN=<Boundary API Token> vagrant up <virtual machine name>
+    $ API_TOKEN=<TrueSight Pulse API Token> vagrant up <virtual machine name>
     ```
 NOTE: Run `vagrant status` to list the name of the virtual machines.
 
