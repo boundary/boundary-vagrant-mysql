@@ -1,4 +1,4 @@
-# Boundary MySQL
+# TrueSight Pulse MySQL
 
 Configures a virtual machine with a MySQL instance for testing Boundary Plugin for MySQL.
 
@@ -13,18 +13,21 @@ Configures a virtual machine with a MySQL instance for testing Boundary Plugin f
 Prior to installation you need to obtain in your Boundary API Token.
 
 1. Clone the GitHub Repository:
-```bash
-$ git clone https://github.com/boundary/boundary-vagrant-redis
-```
+
+    ```bash
+    $ git clone https://github.com/boundary/vagrant-mysql
+    ```
 
 2. Start the virtual machine using your Boundary API Token and Redis version:
-```bash
-$ BOUNDARY_API_TOKEN=<Boundary API Token> BOUNDARY_MY_SQL_VERSION vagrant up <virtual machine name>
-```
+
+    ```bash
+    $ API_TOKEN=<Boundary API Token> vagrant up <virtual machine name>
+    ```
 NOTE: Run `vagrant status` to list the name of the virtual machines.
 
 3. Login to the virtual machine
-```bash
-$ vagrant ssh <virtual machine name>
-```
+
+    ```bash
+    $ vagrant ssh <virtual machine name>
+    ```
 

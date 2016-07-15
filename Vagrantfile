@@ -51,8 +51,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     puppet.manifests_path = "manifests"
     puppet.manifest_file  = "site.pp"
     puppet.facter = {
-      "boundary_api_token" => ENV["BOUNDARY_API_TOKEN"],
-      "mysql_version" => ENV["BOUNDARY_REDIS_VERSION"] ||= "5.2"
+      "api_token" => ENV["TSP_API_TOKEN"],
     }
   end
 
